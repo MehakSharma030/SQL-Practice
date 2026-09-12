@@ -23,7 +23,7 @@ ADD COLUMN city VARCHAR(10);
 ALTER TABLE student
 MODIFY COLUMN age INT NOT NULL;
 
--- change column of the table
+-- change column name of the table
 ALTER TABLE student
 CHANGE name student_name VARCHAR(50);
 
