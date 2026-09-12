@@ -15,6 +15,14 @@ SHOW TABLES;
 -- describe table structure/schema
 DESC student;
 
+-- insert data in table
+INSERT INTO student
+VALUES
+(10 , "A" , 20),
+(11 , "B" , 21),
+(12 , "C" , 19),
+(13 , "D" , 22);
+
 -- add new coloum
 ALTER TABLE student
 ADD COLUMN city VARCHAR(10);
@@ -30,6 +38,10 @@ CHANGE name student_name VARCHAR(50);
 --  rename table name
 ALTER TABLE student
 RENAME TO student_details;
+
+-- delete a particular row
+DELETE FROM student_details
+WHERE rollNo = 12;
 
 -- delete a column in a table
 ALTER TABLE student_details
