@@ -1,0 +1,49 @@
+-- AND, OR, NOT
+-- Used to combine multiple conditions
+
+
+-- 1. AND
+-- Both conditions must be true
+SELECT *
+FROM student
+WHERE age = 20 AND marks > 80;
+
+
+-- 2. AND with multiple conditions
+SELECT *
+FROM student
+WHERE age >= 20 AND city = 'Ludhiana';
+
+
+-- 3. OR
+-- At least one condition must be true
+SELECT *
+FROM student
+WHERE city = 'Ludhiana' OR city = 'Delhi';
+
+
+-- 4. OR with marks
+SELECT *
+FROM student
+WHERE marks > 90 OR age = 20;
+
+
+-- 5. NOT
+-- Reverses the condition
+SELECT *
+FROM student
+WHERE NOT city = 'Delhi';
+
+
+-- 6. NOT with marks
+SELECT *
+FROM student
+WHERE NOT marks > 80;
+
+
+-- 7. Combining AND and OR
+SELECT *
+FROM student
+WHERE age = 20 AND (city = 'Ludhiana' OR city = 'Delhi');
+
+
